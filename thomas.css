@@ -1,0 +1,321 @@
+
+<style>:root {
+
+	--blue-gradient: linear-gradient(to bottom,    #ed76f1  10%,  #c374c6 9%,   #d371d7 18%,   #e577ea   92%, #333 100%) center/cover no-repeat;
+}body {
+	background-image: url('https://images7.alphacoders.com/112/1124370.png');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+}
+nav .top, nav .links {
+	border-left: 2px solid #1D43D1;
+	border-right: 2px solid #1D43D1;
+}
+nav .info{
+	border-left: 2px solid #1D43D1;
+	border-right: 2px solid #1D43D1;
+}
+nav .links {
+	border-bottom: 2px solid #1D43D1;
+}
+
+nav:after {
+	content: "X";
+	display: inline-block;
+	padding: .4em .6em;
+	width: fit-content;
+	border-radius: 5px;
+	background: linear-gradient(to bottom,    #ed76f1  10%,  #c374c6 9%,   #d371d7 18%,   #e577ea   92%, #333 100%);
+	border: 1px solid #FFF;
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin-top: .5em;
+	margin-right: .5em;
+	pointer-events: none;
+}
+
+main {
+	background: none;
+	position: relative;
+	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+}
+.profile h1 {
+	border: 2px solid #1B44B8;
+	border-radius: 5px 5px 0 0;
+	padding: .5em;
+	color: #FFF;
+	text-shadow: 2px 2px 0 #000;
+	background: var(--blue-gradient);
+	margin-bottom: 0;
+}
+.profile .left {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+.profile .general-about {
+	background: #FFF;
+	border-left: 2px solid #1B44B8;
+	border-right: 2px solid #1B44B8;
+	border-bottom: 2px solid #1B44B8;
+	padding: 1em;
+	box-shadow: 5px 8px 10px #0006;
+}
+.general-about .profile-pic {
+	margin: 0 1em 0 0;
+}
+.profile .left .mood {
+	margin-top: 1em;
+	background: #FFF;
+	border-radius: 11px 11px 0 0;
+	box-shadow: 5px 8px 10px #0006;
+	border-left: 2px solid #1B44B8;
+	border-right: 2px solid #1B44B8;
+	border-bottom: 2px solid #1B44B8;
+}
+.profile .left .mood p {
+	margin-left: 1em;
+	margin-top: 1em;
+}
+.profile .left .mood:before {
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	content: "🙂 Mood";
+	display: block;
+	padding: .5em;
+	border: 2px solid #1B44B8;
+	background: var(--blue-gradient);
+	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+	font-size: 1em;
+	text-shadow: 2px 2px 0px #000;
+	border-radius: 10px 10px 0 0;
+	color: #FFF;
+}
+.profile .f-col a {
+	white-space: nowrap;
+	border: 1px solid #003c74;
+	background: linear-gradient(to bottom,    #ed76f1  10%,  #c374c6 9%,   #d371d7 18%,   #e577ea   92%, #333 100%);
+	border-radius: 3px;
+	padding: .5em;
+	margin-left: .3em;
+	font-weight: normal;
+	color: #FFF;
+}
+.profile .f-col a:hover {
+	background:linear-gradient(to bottom,    #ed76f1  10%,  #c374c6 9%,   #d371d7 18%,   #e577ea   92%, #333 100%);
+	text-decoration: none;
+}
+.profile .url-info, .profile .profile-info {
+	background-color: #E7E5CF;
+	border: 0;
+	box-shadow: 2px 2px 0px #FFFFFF inset, -2px -2px 0px #5D5C51 inset, 5px 8px 10px #0006;
+	padding: 10px;
+}
+.profile .url-info p {
+	text-align: center;
+}
+.left .table-section {
+	border-radius: 10px 10px 0 0;
+	border: 2px solid #1B44B8;
+	box-shadow: 5px 8px 10px #0006;
+}
+.left .table-section .details-table tr {
+	display: flex;
+	flex-direction: column;
+}
+.left .table-section .heading {
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	padding: 1em;
+	background: var(--blue-gradient);
+	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+	font-size: 1em;
+	text-shadow: 2px 2px 0px #000;
+	border-radius: 10px 10px 0 0;
+	color: #FFF;
+}
+.left .table-section .inner, .left .table-section .details-table td, .left .table-section .details-table td:first-child {
+	width: 100%;
+	background: #E7E4CF;
+}
+.left .table-section .details-table td:first-child p {
+	padding: .3em .3em 1em .3em;
+	border-bottom: 2px ridge #E7E4CF;
+}
+.left .table-section .details-table td p {
+	padding: .3em;
+	line-height: initial;
+}
+.profile .left .table-section:last-child .details-table tbody {
+	display: flex;
+	flex-direction:column;
+}
+.profile .left .table-section:last-child .details-table tbody tr {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	line-height: 0;
+}
+.profile .left .table-section:last-child .details-table tbody tr td {
+	width: 100%!important;
+	text-align: left;
+	background: none;
+}
+.profile .left .table-section:last-child .details-table tbody tr td p a {
+	font-size: 0;
+	transition: all .3s
+}
+.profile .left .table-section:last-child .details-table tbody tr td p img {
+	font-size: 64px;
+	height: auto;
+	margin: 0;
+}
+.profile .right .blurbs, .profile .right .friends{
+	margin-top: 1em;
+	background: #FFF;
+	border-radius: 11px 11px 0 0;
+	box-shadow: 5px 8px 10px #0006;
+	border-left: 3px solid #1B44B8;
+	border-right: 2px solid #1B44B8;
+	border-bottom: 2px solid #1B44B8;
+}
+.profile .right .blurbs .heading, .profile .right .friends .heading{
+	-moz-background-attachment-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	display: block;
+	padding: .7em;
+	border: 2px solid #1B44B8;
+	background: var(--blue-gradient);
+	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+	font-size: 1em;
+	text-shadow: 2px 2px 0px #000;
+	border-radius: 10px 10px 0 0;
+	color: #FFF;
+}
+.profile .right .blurbs .heading h4:before{
+	content: "💻 ";
+}
+.profile .right .comments-table{
+	height:300px;
+	overflow-y:scroll;
+	display:block;
+	background-color:#E7E4CF;
+}
+.comments-table td{
+	background:#FFFFFF;
+}
+.profile .right .comments-table td:first-child{
+	background:#F8F6F0;
+	border-right:1px solid #BEBBAA;
+	border-bottom:1px solid #BEBBAA;
+}
+.comment-replies{
+	border: 0;
+	border-left: 5px solid #ffbd2e;
+}</iframe>
+
+
+<style>
+/* replace with cd image that has transparent background. must be 150px by 150px. */
+:root {
+--cd-image: url('https://fluorescent-lights.neocities.org/Digital-CD-Disk-Vector-Transparent-PNG.png');
+}
+.profile-pic {
+position: relative;
+width: 183px;
+filter: drop-shadow(0 0 0.25rem gray);
+}
+.profile-pic:after {
+content: "";
+background: url('https://fluorescent-lights.neocities.org/f0rzNHe.png'), linear-gradient(150deg, rgba(255,255,255,0.4), rgba(255,255,255,0.2), 40%, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.6));
+background-size: contain, cover;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+.profile-pic:before {
+content: "";
+background: var(--cd-image);
+position: absolute;
+top: 5px;
+left: -20px;
+width: 150px;
+height: 150px;
+background-repeat: no-repeat;
+z-index: -1;
+animation-name: spin;
+animation-duration: 5000ms;
+animation-iteration-count: infinite;
+animation-timing-function: linear; 
+transition: left ease 0.5s;
+}
+.profile-pic:hover:before {
+left: -75px;
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+.profile-pic .pfp-fallback {
+float: right;
+width: 163px;
+height: 160px;
+border: none;
+}
+.general-about .profile-pic img {
+max-width: inherit;
+}
+</style>
+
+<iframe width="0" height="0" src="https://www.youtube.com/embed/2djElBjA9og?//?&;amp;;autoplay=1&;loop=1&;controls=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" loading="lazy"></iframe>
+
+<style>
+.logo {content: url(https://i.ibb.co/WBsnBPw/07efab96-7ea2-4bed-8e21-17fe3958ef29.png);
+.logo linear-gradient(to bottom,    #ed76f1  10%,  #c374c6 9%,   #d371d7 18%,   #e577ea   92%, #333 100%);
+</style>
+
+<style>
+/* these are the colors for the table headings on the left */
+.profile .contact .heading, .profile .table-section .heading, .home-actions .heading {
+background-color: rgba(171, 118, 207, 0.4);
+}
+</style>
+
+<style>
+/* contacting "_" */
+.profile .contact {
+background-color: rgba(171, 118, 207, 0.4);
+}
+</style>
+
+<style>
+/* pink dashed borders */
+.profile .url-info {
+border: 2px dashed  rgba(255, 161, 207, 1);    
+}
+.profile .contact {
+border: 2px dashed  rgba(255, 161, 207, 1);     
+}
+.profile .table-section {
+border: 2px dashed  rgba(255, 161, 207, 1);     
+}
+
+nav .top {
+  background: #c82fcd;
+  background: #c82fcd;
+  padding: 15px 10px 14px 10px;
+  display: flex;
+  position: relative;
